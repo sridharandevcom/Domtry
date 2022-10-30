@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+html,
+body {
+    background-color: #f2f2f2;
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+    background-color: #5A0B4D;
+    color: #fff;
+}
+
+main {
+    margin: 20px auto;
+
+
+    text-align: center;
+    width: 600px;
+}
+
+main>div>h1 {
+    font-size: 16px;
+}
+
+.contain {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff !important;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgb(231,231,231);
+
+}
+
+.textor {
+    padding: 5px 10px;
+    outline: none;
+    width: 100%;
+    margin-right: 15px;
+    border: 1px solid ghostwhite;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+}
+
+.btn-save {
+    padding: 5px 10px;
+    background-color: #75ac10;
+    border: none;
+    border-radius: 5px;
+    text-transform:uppercase;
+    font-size: 12px;
+}
+
+.food-con {
+    margin: 20px 0;
+    background-color: #fff;
+    list-style: none;
+    padding: 20px; 
+    box-shadow: 5px 5px 10px rgb(231,231,231);
+    border-radius: 5px;
+}
+
+.food-con .food-item {
+    padding: 5px 10px;
+    font-size: 12px;
+    border: 1px solid rgb(185, 171, 171);
+    margin: 10px 0;
+    color: gray;
+    text-align: left;
+    text-transform: capitalize;
+}
+
+
+.food-con .food-item:hover{
+    background-color: rgb(79,123,255);
+    color:#fff;
+    cursor:pointer;
+    font-weight:bold;
+}
+.alert {
+    padding: 10px;
+    background-color: rgb(100, 228, 156);
+    color: #fff;
+    font-size: 12px;
+    border-radius: 5px;
+    text-align: left;
+    border-left: 5px solid black;
+    font-weight: 500;
+    margin: 10px 0;
+}
