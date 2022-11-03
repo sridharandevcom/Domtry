@@ -1,23 +1,44 @@
-/* 
+ 
+const main = document.getElementById("main");
+
 function createViaDom(msg){
     
-const main = document.getElementById("main");
-const div = document.createElement("div");
-div.className='alert';
 
+const div = document.createElement("div");
+//div.className='alert';
 const text= document.createTextNode(msg);
 
 div.append(text);
+div.className="alert";
 
 main.prepend(div)
-
-console.log(div,text);
+console.log(typeof div);
+//console.log(div,text);
 }
-createViaDom("FOOD I LOVE ❤");
-createViaDom("FOOD LOVE ❤");
- */
 
- const contentEl = document.querySelector(".alert .alert-message");
+createViaDom("Hello Buddys");
+
+
+
+function createViaTemplate(message){
+const template =`
+<div class='alert'>
+${message}
+
+
+</div>
+`
+
+console.log(typeof template);
+main.innerHTML +=template;
+}
+
+createViaTemplate("Hey Mam")
+//createViaDom("FOOD I LOVE ❤");
+//createViaDom("FOOD LOVE ❤");
+
+
+ //const contentEl = document.querySelector(".alert .alert-message");
 // console.log(contentEl.innerText);
 // console.log(contentEl.innerHTML);
 // console.log(contentEl.textContent);
