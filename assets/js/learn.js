@@ -1,39 +1,77 @@
- 
-const main = document.getElementById("main");
+const list=document.getElementById("food-con")
+const frag=document.createDocumentFragment()
 
-function createViaDom(msg){
+
+const food=['Veg','Non','sambar','curd']
+
+food.forEach((food)=>{
+    const el=document.createElement("li");
+    el.textContent=food; 
+    el.className="food-item";
+    frag.append(el)
+})
+list.append(frag)
+
+
+// console.time("EL");
+//  for(let i=0;i<=1000;i++){
+//     const el=document.createElement("li");
+//     el.textContent= `Food ${i}`;
+//      el.className="food-item";
+//      list.append(el);
+//  }
+//  console.timeEnd("EL");
+
+
+
+// console.time("Frag");
+// 
+// for(let i=0;i<1000;i++){
+//     const el=document.createElement("li");
+//     el.textContent= `Food ${i}`;
+//     el.className="food-item";
+//     frag.append(el);
+// }
+// list.append(frag);
+// console.timeEnd("Frag");
+
+
+
+// const main = document.getElementById("main");
+
+// function createViaDom(msg){
     
 
-const div = document.createElement("div");
-//div.className='alert';
-const text= document.createTextNode(msg);
+// const div = document.createElement("div");
+// //div.className='alert';
+// const text= document.createTextNode(msg);
 
-div.append(text);
-div.className="alert";
+// div.append(text);
+// div.className="alert";
 
-main.prepend(div)
-console.log(typeof div);
-//console.log(div,text);
-}
+// main.prepend(div)
+// console.log(typeof div);
+// //console.log(div,text);
+// }
 
-createViaDom("Hello Buddys");
-
-
-
-function createViaTemplate(message){
-const template =`
-<div class='alert'>
-${message}
+// createViaDom("Hello Buddys");
 
 
-</div>
-`
 
-console.log(typeof template);
-main.innerHTML +=template;
-}
+// function createViaTemplate(message){
+// const template =`
+// <div class='alert'>
+// ${message}
 
-createViaTemplate("Hey Mam")
+
+// </div>
+// `
+
+// console.log(typeof template);
+// main.innerHTML +=template;
+// }
+
+// createViaTemplate("Hey Mam")
 //createViaDom("FOOD I LOVE ❤");
 //createViaDom("FOOD LOVE ❤");
 
