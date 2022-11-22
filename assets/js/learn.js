@@ -1,16 +1,26 @@
 const list=document.getElementById("food-con");
-const el=document.createElement("li");
- el.textContent= `Food 6`;
- el.className="food-item";
-//  list.append(el);
-//  list.prepend(el);
-// list.before(el);
-// list.after(el);
+//list.insertAdjacentHTML('afterbegin','Foodies');
+//list.insertAdjacentHTML('afterend','Food List over');
+list.insertAdjacentHTML('beforebegin','Before Begins');
+list.insertAdjacentHTML('beforeend','Before End');
 
-//old way of before method
-console.log(list.parentNode.insertBefore(el,list));
-console.log(list.parentNode.insertBefore(el,list.nextSibling));
-// const frag=document.createDocumentFragment()
+
+const li=document.createElement('li');
+li.textContent='Hi sri ';
+li.className='food-item';
+list.insertAdjacentElement('afterbegin',li)
+// const el=document.createElement("li");
+//  el.textContent= `Food 6`;
+//  el.className="food-item";
+//  list.append(el);
+//   list.prepend(el);
+//  list.before(el);
+//  list.after(el);
+
+// //old way of before method
+// console.log(list.parentNode.insertBefore(el,list));
+// console.log(list.parentNode.insertBefore(el,list.nextSibling));
+// // const frag=document.createDocumentFragment()
 
 
 // const food=['Veg','Non','sambar','curd']
