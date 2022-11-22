@@ -1,16 +1,27 @@
-const list=document.getElementById("food-con")
-const frag=document.createDocumentFragment()
+const list=document.getElementById("food-con");
+const el=document.createElement("li");
+ el.textContent= `Food 6`;
+ el.className="food-item";
+//  list.append(el);
+//  list.prepend(el);
+// list.before(el);
+// list.after(el);
+
+//old way of before method
+console.log(list.parentNode.insertBefore(el,list));
+console.log(list.parentNode.insertBefore(el,list.nextSibling));
+// const frag=document.createDocumentFragment()
 
 
-const food=['Veg','Non','sambar','curd']
+// const food=['Veg','Non','sambar','curd']
 
-food.forEach((food)=>{
-    const el=document.createElement("li");
-    el.textContent=food; 
-    el.className="food-item";
-    frag.append(el)
-})
-list.append(frag)
+// food.forEach((food)=>{
+//     const el=document.createElement("li");
+//     el.textContent=food; 
+//     el.className="food-item";
+//     frag.append(el)
+// })
+// list.append(frag)
 
 
 // console.time("EL");
