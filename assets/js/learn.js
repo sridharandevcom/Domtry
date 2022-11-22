@@ -1,14 +1,30 @@
-const list=document.getElementById("food-con");
-//list.insertAdjacentHTML('afterbegin','Foodies');
-//list.insertAdjacentHTML('afterend','Food List over');
-list.insertAdjacentHTML('beforebegin','Before Begins');
-list.insertAdjacentHTML('beforeend','Before End');
+
+ const foodcont = document.querySelector(".food-con");
+const foodli= document.querySelector(".food-con :first-child"); 
+console.log(foodli);
+
+ const li=document.createElement('li');
+ li.textContent='Hi sri ';
+ li.className='food-item';
+ foodcont.replaceChildren(li);
+ // foodcont.replaceWith("text1","text2");
+ // foodli.replaceWith(li);
+ //  foodli.parentNode.replaceChild(li,foodli)
 
 
-const li=document.createElement('li');
-li.textContent='Hi sri ';
-li.className='food-item';
-list.insertAdjacentElement('afterbegin',li)
+
+
+ //const list=document.getElementById("food-con");
+
+
+// //list.insertAdjacentHTML('afterbegin','Foodies');
+// //list.insertAdjacentHTML('afterend','Food List over');
+// list.insertAdjacentHTML('beforebegin','Before Begins');
+// list.insertAdjacentHTML('beforeend','Before End');
+
+
+
+// list.insertAdjacentElement('afterbegin',li)
 // const el=document.createElement("li");
 //  el.textContent= `Food 6`;
 //  el.className="food-item";
