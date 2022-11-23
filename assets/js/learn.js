@@ -7,7 +7,7 @@ console.log(foodli);
  li.textContent='Hi sri ';
  li.className='food-item';
  foodcont.replaceChildren(li);
- // foodcont.replaceWith("text1","text2");
+  foodcont.replaceWith("text1","text2");
  // foodli.replaceWith(li);
  //  foodli.parentNode.replaceChild(li,foodli)
 
