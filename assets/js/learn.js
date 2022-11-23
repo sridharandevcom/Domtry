@@ -1,13 +1,30 @@
 
  const foodcont = document.querySelector(".food-con");
-const foodli= document.querySelector(".food-con :first-child"); 
-console.log(foodli);
+ const dupp= document.getElementById("dup");
+ const syncc  = document.getElementById("sync");
 
- const li=document.createElement('li');
- li.textContent='Hi sri ';
- li.className='food-item';
- foodcont.replaceChildren(li);
-  foodcont.replaceWith("text1","text2");
+const cloneData= foodcont.cloneNode()
+console.log(cloneData);
+
+
+
+syncc.addEventListener("click",()=>{
+    dupp.innerHTML='';
+    const cloneData1=foodcont.cloneNode(true);
+    console.log(cloneData1);
+    
+    dupp.append(cloneData1);
+})
+
+
+// const foodli= document.querySelector(".food-con :first-child"); 
+// console.log(foodli);
+
+//  const li=document.createElement('li');
+//  li.textContent='Hi sri ';
+//  li.className='food-item';
+//  foodcont.replaceChildren(li);
+//   foodcont.replaceWith("text1","text2");
  // foodli.replaceWith(li);
  //  foodli.parentNode.replaceChild(li,foodli)
 

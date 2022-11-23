@@ -19,7 +19,7 @@ btn.addEventListener('click', () => {
 
 
 const goi = document.querySelector("main  input")
-console.log(goi);
+//console.log(goi);
 /*
 const el = document.getElementsByTagName('li');
 console.log(el.length);
