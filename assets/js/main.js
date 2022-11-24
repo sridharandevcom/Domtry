@@ -1,19 +1,54 @@
+function removeItem(event){
+    console.log(event.target.parentNode.parentNode);
+    const existing=event.target.parentNode.parentNode;
+    //existing.remove();
+
+    existing.parentNode.removeChild(existing)
+
+
+}
+
+
 let head = document.getElementById('textor');
 let btn = document.getElementById('btn-save');
 let res = document.getElementById('food-con');
 //console.log(head, btn);
 
+
+
 btn.addEventListener('click', () => {
-    const li= document.createElement("li");
-    const text= document.createTextNode(head.value);
-    const cmd=document.createComment("Create Li");
+    let newlist= document.createElement("li");
+    const divel=document.createElement("div");
+    const divremove=document.createElement("div");
 
-    li.className='food-item';
+    divremove.innerHTML='<i class="fa fa-xmark"></i>';
+
+
+    newlist.append(divel);
+
+    divel.textContent=head.value;
+    newlist.className='food-item';
+
+    food-con.append(newlist);
+    newlist.append(divel);
+    newlist.append(divremove);
+
+    newlist.textContent=head.value;
+    newlist.className='food-item'
+
+    //const text= document.createTextNode(head.value);
+
+    
+    //const li= document.createElement("li");
+    //const text= document.createTextNode(head.value);
+    //const cmd=document.createComment("Create Li");
+
+    //li.className='food-item';
    
-    li.append(text);
-    li.append(cmd)
+    //li.append(text);
+    //li.append(cmd)
 
-    res.append(li);
+    //res.append(li);
    // res.innerHTML += `<li class="food-item">${head.value.toUpperCase()}</li>`;
 })
 

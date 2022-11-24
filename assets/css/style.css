@@ -79,6 +79,10 @@ main>div>h1 {
     color: gray;
     text-align: left;
     text-transform: capitalize;
+
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 

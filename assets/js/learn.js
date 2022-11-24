@@ -1,24 +1,29 @@
 
  const foodcont = document.querySelector(".food-con");
-const foodli= document.querySelector(".food-con :first-child"); 
-console.log(foodli);
-
- const li=document.createElement('li');
- li.textContent='Hi sri ';
- li.className='food-item';
- foodcont.replaceChildren(li);
-  foodcont.replaceWith("text1","text2");
- // foodli.replaceWith(li);
- //  foodli.parentNode.replaceChild(li,foodli)
 
 
 
 
- //const list=document.getElementById("food-con");
+
+//  const foodli= document.querySelector(".food-con :first-child"); 
+//  console.log(foodli);
+
+//  const li=document.createElement('li');
+//  li.textContent='Hi sri ';
+//  li.className='food-item';
+//  foodcont.replaceChildren(li);
+//  foodcont.replaceWith("text1","text2");
+//  foodli.replaceWith(li);
+//  foodli.parentNode.replaceChild(li,foodli)
 
 
-// //list.insertAdjacentHTML('afterbegin','Foodies');
-// //list.insertAdjacentHTML('afterend','Food List over');
+
+
+// const list=document.getElementById("food-con");
+
+
+// list.insertAdjacentHTML('afterbegin','Foodies');
+// list.insertAdjacentHTML('afterend','Food List over');
 // list.insertAdjacentHTML('beforebegin','Before Begins');
 // list.insertAdjacentHTML('beforeend','Before End');
 
@@ -26,12 +31,12 @@ console.log(foodli);
 
 // list.insertAdjacentElement('afterbegin',li)
 // const el=document.createElement("li");
-//  el.textContent= `Food 6`;
-//  el.className="food-item";
-//  list.append(el);
-//   list.prepend(el);
-//  list.before(el);
-//  list.after(el);
+// el.textContent= `Food 6`;
+// el.className="food-item";
+// list.append(el);
+// list.prepend(el);
+// list.before(el);
+// list.after(el);
 
 // //old way of before method
 // console.log(list.parentNode.insertBefore(el,list));
